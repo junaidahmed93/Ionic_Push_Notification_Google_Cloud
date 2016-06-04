@@ -1,0 +1,20 @@
+{
+  "name": "fun",
+  "authors": [
+    "junaidahmed93@live.com <aries1993>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.6"
+  }
+}
