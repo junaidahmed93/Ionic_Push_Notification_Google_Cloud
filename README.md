@@ -33,7 +33,19 @@ Finally add following code snippet into your code (app.js) --
 ```.run(function($ionicPlatform){
   $ionicPlatform.ready(function() {
     var push = new Ionic.Push({
-      "debug": true
+      "debug": true,
+      "onNotification": function (notification) {
+              
+              console.log(notification);
+              $ionicPopup.alert({
+                title: notification.title,
+                template: notification.text
+              });
+             
+            },
+            "onRegister": function (data) {
+              console.log(data.token);
+            }
     });
     push.register(function(token) {
       console.log("Device token:",token.token);
