@@ -12,23 +12,23 @@ Ionic push notification implementation requires 4 step
 ***
 
 # Ionic app setup
-  Create an ionic blank app. Install platform-web-client then phonegap-plugin provided with GCM Project Number. --
+  Create an ionic blank app. Install platform-web-client then phonegap-plugin provided with GCM Project Number. 
 
 
 
-`ionic add ionic-platform-web-client` --
+`ionic add ionic-platform-web-client` 
 
 
-`ionic plugin add phonegap-plugin-push --variable SENDER_ID="GCM_PROJECT_NUMBER"` --
+`ionic plugin add phonegap-plugin-push --variable SENDER_ID="GCM_PROJECT_NUMBER"` 
 
-Once you have finished installation Upload projec to Ionic.io using command --
+Once you have finished installation Upload projec to Ionic.io using command 
 
-`ionic io init` --
+`ionic io init` 
 
-Disbale limited pushes --
+Disbale limited pushes 
 
-`ionic config set dev_push false` (This command will trun project from dev to production) --
-Finally add following code snippet into your code (app.js) --
+`ionic config set dev_push false` (This command will trun project from dev to production) 
+Finally add following code snippet into your code (app.js) 
 
 ```.run(function($ionicPlatform){
   $ionicPlatform.ready(function() {
@@ -43,7 +43,7 @@ Finally add following code snippet into your code (app.js) --
               });
              
             },
-            "onRegister": function (data) {
+      "onRegister": function (data) {
               console.log(data.token);
             }
     });
