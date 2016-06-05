@@ -1,5 +1,12 @@
 Welcome to the Ionic_Push_Notification_Google_Cloud wiki!
 
+![Web](http://i.imgur.com/LgtZHEs.png) 
+
+![Mobile](http://i.imgur.com/1tp6BOi.png) 
+
+![Mobile](http://i.imgur.com/vgQMDGA.png)
+
+
 Ionic push notification implementation requires 4 step 
 
 1. Key Generation from GCM / APNS
