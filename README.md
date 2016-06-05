@@ -52,4 +52,29 @@ Finally add following code snippet into your code (app.js)
       push.saveToken(token);  // persist the token in the Ionic Platform
     });
   });
-})```
+})
+```
+***
+
+
+# Security Profile(Android)
+This is the most important part of push notification. Setting up a security profile requires --
+
+1. GO to ionic.io , Select your project then go to Setting page, Under the Certificate Section Click **New Security Token** Provide a valid name. --
+
+2. Edit security certificate , Go to Android tab, Provide GCM (Server Key) and Keystore file with password and alias. --
+
+#### What is keystore File? How to create it? --
+keystore is a security certificate or public key certificate , used for instance in SSL encryption. --
+
+To create a keystore file you must have **JDK** Installed on machine. --
+
+1. Go to ProgramFiles/Java/Bin/jre7/ (path may differ as you installed somewhere else). --
+
+2. Open Command Prompt in this directory. (run as administrator). --
+
+3. write the command --
+
+`keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000` --
+
+Here, alias_name could be as per your choice. This will ask some basic information and 2 passwords **KeyStore Password** and **KeyPassword**.
