@@ -1,7 +1,7 @@
 var app = angular.module('main', []);
 
 app.controller('first', function ($scope, $http) {
-    console.log('hi');
+   
     $scope.push = {};
     $scope.done = function (push) {
         console.log(push);

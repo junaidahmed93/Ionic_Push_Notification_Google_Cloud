@@ -8,19 +8,17 @@
     <script src="app.js"></script>
 </head>
 <body ng-app="main">
-    <div ng-controller="first">
-        <button ng-click="done()">Click Me</button>
-    </div>
+    
     
     <div class="main" ng-controller="first">
         <form ng-submit="done(push)">
             <h3>Push Notification</h3>
             <label >Title:
-                <input type="text" placeholder="Push Notification Title" ng-model="push.title">
+                <input type="text" placeholder="Title" ng-model="push.title">
             </label>
             <label >
                 Message :
-                <input type="text" placeholder="Push Notification Message" ng-model="push.message">
+                <input type="text" placeholder=" Message" ng-model="push.message">
             </label>
             
             

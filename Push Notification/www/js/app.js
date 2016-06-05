@@ -16,7 +16,7 @@ angular.module('starter', ['ionic'])
         // from snapping when text inputs are focused. Ionic handles this internally for
         // a much nicer keyboard experience.
         cordova.plugins.Keyboard.disableScroll(true);
-        $ionicPlatform.ready(function () {
+       
           var push = new Ionic.Push({
             "debug": true,
             "onNotification": function (notification) {
@@ -37,10 +37,14 @@ angular.module('starter', ['ionic'])
             console.log("Device token:", token.token);
             push.saveToken(token);  // persist the token in the Ionic Platform
           });
-        });
+        
       }
       if (window.StatusBar) {
         StatusBar.styleDefault();
       }
     });
   })
+
+
+
+

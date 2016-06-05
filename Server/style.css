@@ -1,11 +1,11 @@
 body{
     margin: 0;
-    background-color:grey;
+    background-color:white;
 }
 .main{
     height: 200px;
     width: 174px;
-    background-color: lightgray;
+    background-color: white;
     margin: 0 auto;
 }
 button{
